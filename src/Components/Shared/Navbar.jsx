@@ -14,13 +14,13 @@ const Navbar = () => {
         <NavLink to={"contact"}>Blog</NavLink>
       </li>
       <li>
-        <NavLink to={"followMe"}>Follow me</NavLink>
+        <NavLink to={"followMe"}>Contact us</NavLink>
       </li>
     </>
   );
 
   return (
-    <div className="  bg-base-30 py-3">
+    <div className="  bg-base-300 py-3">
       <div className="navbar max-w-7xl mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -47,7 +47,7 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-4xl cursor-wait font-bold italic">
+          <a className="btn btn-ghost text-2xl md:text-4xl cursor-wait font-bold italic">
             H4K1[\/]
           </a>
         </div>

@@ -7,7 +7,7 @@ const ContactIcon = () => {
       <Link to={"https://github.com/JakirulIslamHakim"}>
         <FaGithub></FaGithub>
       </Link>
-      <Link>
+      <Link to={"https://bd.linkedin.com/in/jakirul-islam-hakim-882418279"}>
         <FaLinkedin></FaLinkedin>
       </Link>
       <Link to={"https://web.facebook.com/jakirulIslamHakim1"}>
