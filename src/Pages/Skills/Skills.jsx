@@ -5,6 +5,7 @@ import "react-circular-progressbar/dist/styles.css";
 const Skills = () => {
   return (
     <Container>
+{/*skills section  */}
       <div>
         <div className="flex justify-center mb-5">
           <h2 className="text-4xl text-center font-bold border-b-4 pb-4 inline-block px-5">
