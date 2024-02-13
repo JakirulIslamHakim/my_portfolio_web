@@ -1,6 +1,16 @@
-import { CircularProgressbar, CircularProgressbarWithChildren } from "react-circular-progressbar";
 import Container from "../../Components/Shared/Container";
 import "react-circular-progressbar/dist/styles.css";
+import SkillsProgressbar from "../../Components/SkillsProgreesbar/SkillsProgressbar";
+import { FaHtml5, FaCss3Alt, FaReact, FaGitSquare } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import {
+  SiTailwindcss,
+  SiMongodb,
+  SiExpress,
+  SiFirebase,
+  SiPostman,
+  SiMui,
+} from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -12,20 +22,90 @@ const Skills = () => {
           </h2>
         </div>
         <div>
-          <h3 className="text-2xl font-semibold text-center">Frontend</h3>
-          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6">
-            <CircularProgressbarWithChildren value={66}>
-              {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
-              <img
-                style={{ width: 40, marginTop: -5 }}
-                src="https://i.imgur.com/b9NyUGm.png"
-                alt="doge"
-              />
-              <div style={{ fontSize: 12, marginTop: -5 }}>
-                <strong>66%</strong> mate
-              </div>
-            </CircularProgressbarWithChildren>
-            ;
+          <h3 className="text-lg md:text-2xl font-semibold text-center mb-5 md:mb-10 ">
+            Technologies I've Explored and Utilized
+          </h3>
+          <div className="grid grid-cols-3 md:grid-cols-5 gap-3 justify-around ">
+            <SkillsProgressbar
+              name={"Html"}
+              parcent={90}
+              icon={FaHtml5}
+              color={"text-yellow-500"}
+            />
+            <SkillsProgressbar
+              name={"Css"}
+              parcent={70}
+              icon={FaCss3Alt}
+              color={"text-blue-500"}
+            />
+            <SkillsProgressbar
+              name={"tailwind"}
+              parcent={80}
+              icon={SiTailwindcss}
+              color={"text-blue-400"}
+            />
+            <SkillsProgressbar
+              name={"Javascript"}
+              parcent={70}
+              icon={IoLogoJavascript}
+              color={"text-yellow-600"}
+            />
+            <SkillsProgressbar
+              name={"Mui"}
+              parcent={60}
+              icon={SiMui}
+              color={"text-blue-400"}
+            />
+            <SkillsProgressbar
+              name={"react"}
+              parcent={70}
+              icon={FaReact}
+              color={"text-blue-400"}
+            />
+            <SkillsProgressbar
+              name={"Mongodb"}
+              parcent={60}
+              icon={SiMongodb}
+              color={"text-green-700"}
+            />
+            <SkillsProgressbar
+              name={"express"}
+              parcent={60}
+              icon={SiExpress}
+              color={"text-black"}
+            />
+            <SkillsProgressbar
+              name={"node"}
+              parcent={60}
+              image={
+                "https://zisanurhaque.vercel.app/_next/image?url=%2Fskill%2Fnode.png&w=750&q=75"
+              }
+            />
+            <SkillsProgressbar
+              name={"firebase"}
+              parcent={80}
+              icon={SiFirebase}
+              color={"text-yellow-500"}
+            />
+            <SkillsProgressbar
+              name={"jwt"}
+              parcent={50}
+              image={
+                "https://media.licdn.com/dms/image/D4D12AQFIP1Sz-eHRjg/article-cover_image-shrink_720_1280/0/1684876475366?e=2147483647&v=beta&t=0yrmkNwfutQLUDgkCOjX_ktg9ge4o_RjVlRxj5aNuvY"
+              }
+            />
+            <SkillsProgressbar
+              name={"git"}
+              parcent={50}
+              icon={FaGitSquare}
+              color={"text-black"}
+            />
+            <SkillsProgressbar
+              name={"Postman"}
+              parcent={50}
+              icon={SiPostman}
+              color={"text-orange-400"}
+            />
           </div>
         </div>
       </div>
