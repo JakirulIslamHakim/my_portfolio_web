@@ -12,7 +12,7 @@ const AboutMe = () => {
           <p>
             I'm <span className="font-bold">Jakirul Islam Hakim</span>, an enthusiastic MERN stack
             web developer on a quest for digital excellence. With a toolbox
-            packed with HTML, CSS, JavaScript, React, Bootstrap, Firebase,
+            packed with HTML, CSS, JavaScript, React, Tailwind, Firebase,
             MongoDB, and Express JS, I embark on every project with a fervent
             dedication to innovation.{" "}
           </p>

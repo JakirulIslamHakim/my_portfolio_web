@@ -5,7 +5,7 @@ import { FaDownload } from "react-icons/fa";
 const HeroSection = () => {
   return (
     <Container>
-      <div className="hero min-h-screen bg-base-200 ">
+      <div className="hero rounded-lg py-4 md:py-12 bg-base-200 ">
         {/*  */}
         <div className="hero-content justify-start flex-col md:flex-row-reverse">
           {/* image  */}
