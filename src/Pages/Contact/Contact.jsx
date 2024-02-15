@@ -28,7 +28,7 @@ const Contact = () => {
           />
         </h2>
       </div>
-      <div className="flex items-center w-full flex-col-reverse md:flex-row-reverse py-5 md:py-12 ">
+      <div className="flex items-center w-full flex-col-reverse md:flex-row-reverse py-5 md:py-12 border-4 rounded-xl">
         {/* Contact link */}
         <div className="text-center lg:text-left md:w-1/2  mt-10 md:my-0 space-y-3 font-medium">
           {/* <h1 className="text-5xl font-bold">Login now!</h1> */}
@@ -36,7 +36,7 @@ const Contact = () => {
             <IoMailSharp className="text-3xl  text-blue-600" />
             <a
               href="mailto:jakirulislamhakim@gmail.com"
-              className="text-xl hover:text-blue-700 hover:underline"
+              className="text-lg md:text-xl hover:text-blue-700 hover:underline"
             >
               jakirulislamhakim@gmail.com
             </a>
@@ -45,9 +45,9 @@ const Contact = () => {
             <FaWhatsappSquare className="text-3xl text-[#25D366]" />
             <a
               href="tel:+8801736100945"
-              className="text-xl  hover:text-blue-700 hover:underline"
+              className="text-lg md:text-xl  hover:text-blue-700 hover:underline"
             >
-              +8801736100945{" "}
+              +8801736100945
             </a>
             <span className="font-bold">(whatsapp)</span>
           </div>
@@ -61,7 +61,7 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                placeholder="Name"
+                placeholder="Your name"
                 className="input input-bordered"
                 {...register("name", { required: "Name Is Required" })}
               />
@@ -75,7 +75,7 @@ const Contact = () => {
               </label>
               <input
                 type="email"
-                placeholder="email"
+                placeholder="Your email"
                 className="input input-bordered"
                 {...register("email", {
                   required: "Email Is Required",
@@ -97,7 +97,7 @@ const Contact = () => {
                 className="textarea textarea-info"
                 maxLength={200}
                 rows={4}
-                placeholder="Message"
+                placeholder="Your message"
                 {...register("message", {
                   required: "Message Is Required",
                   maxLength: {
@@ -118,10 +118,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-
-      {/* <div className="her  bg-base-200">
-        <div className="hero-conten py-5 md:py-12 flex justify-center items-center gap-5 flex-col-reverse lg:flex-row-reverse"></div>
-      </div> */}
     </Container>
   );
 };
