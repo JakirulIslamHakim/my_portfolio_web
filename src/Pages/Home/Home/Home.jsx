@@ -8,7 +8,7 @@ import HeroSection from "../HeroSection/HeroSection";
 
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <HeroSection></HeroSection>
       <AboutMe></AboutMe>
       <Skills></Skills>

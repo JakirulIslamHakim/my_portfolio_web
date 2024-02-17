@@ -47,7 +47,7 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-2xl md:text-4xl cursor-wait font-bold italic bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
+          <a className="btn btn-ghost btn-sm md:btn-md text-xl md:text-4xl cursor-wait font-bold italic bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
             H4K1[\/]
           </a>
         </div>
@@ -57,11 +57,6 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          {/* <div className="avatar">
-            <div className=" w-16 md:w-24 rounded-full">
-              <img src="https://i.ibb.co/NLk26Nz/hakim.jpg" />
-            </div>
-          </div> */}
           <ContactIcon></ContactIcon>
         </div>
       </div>

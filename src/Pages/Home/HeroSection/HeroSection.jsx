@@ -1,8 +1,8 @@
 import Container from "../../../Components/Shared/Container";
-import Typewriter from "typewriter-effect";
 import { FaDownload } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import TextAnimation from "../../../Components/TextAnimation/TextAnimation";
 
 AOS.init({
   duration: 1200,
@@ -10,7 +10,7 @@ AOS.init({
 const HeroSection = () => {
   return (
     <Container>
-      <div className="hero rounded-lg py-4 md:py-12  ">
+      <div className="hero rounded-lg  md:py-12  ">
         <div className="hero-content justify-start flex-col md:flex-row-reverse">
           {/* image  */}
           <div data-aos="fade-right" className=" p-6 ">
@@ -30,19 +30,15 @@ const HeroSection = () => {
               </span>
             </h2>
             {/* typeWriter */}
-            <div className="text-xl md:text-3xl font-extrabold mt-2 md:mt-3 text-orange-600">
-              <Typewriter
-                options={{
-                  strings: [
-                    "Frontend Developer",
-                    "Javascript Developer",
-                    "React Developer",
-                    "MERN Stack Developer",
-                    "Node Developer",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                }}
+            <div className="text-xl md:text-3xl  mt-2 md:mt-3">
+              <TextAnimation
+                text={[
+                  "Frontend Developer",
+                  "Javascript Developer",
+                  "React Developer",
+                  "MERN Stack Developer",
+                  "Node Developer",
+                ]}
               />
             </div>
             <p className="md:w-3/4  my-3 text-sm md:text-lg text-justify">
@@ -51,7 +47,7 @@ const HeroSection = () => {
               and intuitive design, I bring projects to life with precision and
               creativity. Let's build something extraordinary."
             </p>
-            <button className="btn ml-6 bg-red-700 btn-sm md:btn-md outline outline-black mt-6 text-bold md:text-xl text-white">
+            <button className="btn ml-6 btn-sm md:btn-md outline outline-black mt-6 text-bold md:text-xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
               Resume <FaDownload></FaDownload>
             </button>
           </div>

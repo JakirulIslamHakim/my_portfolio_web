@@ -11,22 +11,16 @@ import {
   SiPostman,
   SiMui,
 } from "react-icons/si";
-import Typewriter from 'typewriter-effect';
+import TextAnimation from "../../Components/TextAnimation/TextAnimation";
 
 const Skills = () => {
   return (
     <Container>
-{/*skills section  */}
+      {/*skills section  */}
       <div>
         <div className="flex justify-center mb-5">
-          <h2 className="text-4xl text-center font-bold border-b-4 pb-4 inline-block px-5">
-          <Typewriter
-        options={{
-          strings: ["Skills"],
-          autoStart: true,
-          loop: true,
-        }}
-      />
+          <h2 className="text-4xl text-center border-b-4 pb-4 px-5">
+            <TextAnimation text={["Skills"]} />
           </h2>
         </div>
         <div>
