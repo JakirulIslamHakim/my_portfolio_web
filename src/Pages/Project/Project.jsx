@@ -1,6 +1,11 @@
 import Container from "../../Components/Shared/Container";
 import ProjectCard from "./ProjectCard";
 import Typewriter from "typewriter-effect";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({
+  duration: 1200,
+});
 
 const Project = () => {
   return (
@@ -16,10 +21,16 @@ const Project = () => {
           />
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-5 lg:gap-16 py-4">
-        <ProjectCard></ProjectCard>
-        <ProjectCard></ProjectCard>
-        <ProjectCard></ProjectCard>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-5 lg:gap-16 py-4">
+        <div data-aos="flip-left">
+          <ProjectCard></ProjectCard>
+        </div>
+        <div data-aos="flip-right">
+          <ProjectCard></ProjectCard>
+        </div>
+        <div data-aos="flip-left">
+          <ProjectCard></ProjectCard>
+        </div>
       </div>
     </Container>
   );

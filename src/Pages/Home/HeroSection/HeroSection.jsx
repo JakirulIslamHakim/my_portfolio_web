@@ -1,24 +1,28 @@
 import Container from "../../../Components/Shared/Container";
 import Typewriter from "typewriter-effect";
 import { FaDownload } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+AOS.init({
+  duration: 1200,
+});
 const HeroSection = () => {
   return (
     <Container>
-      <div className="hero rounded-lg py-4 md:py-12 bg-base-200 ">
-        {/*  */}
+      <div className="hero rounded-lg py-4 md:py-12  ">
         <div className="hero-content justify-start flex-col md:flex-row-reverse">
           {/* image  */}
-          <div className=" p-6 ">
+          <div data-aos="fade-right" className=" p-6 ">
             <img
               src="https://i.ibb.co/NLk26Nz/hakim.jpg "
               className="max-w-sm rounded-lg shadow-2xl ring w-2/3 mx-auto md:w-full bg-white"
             />
           </div>
           {/* content */}
-          <div className="lg:pr-16 md:flex-1">
+          <div data-aos="fade-left" className="lg:pr-16 md:flex-1">
             <h2 className="text-3xl md:text-5xl flex">Hello 👋,</h2>
-            <h2 className=" text-xl md:text-4xl font-semibold mt-2">
+            <h2 className=" text-xl md:text-4xl font-semibold mt-2 ">
               I&apos;m
               <span className="uppercase font-bold ">
                 {" "}
@@ -26,7 +30,7 @@ const HeroSection = () => {
               </span>
             </h2>
             {/* typeWriter */}
-            <div className="text-xl md:text-3xl font-extrabold mt-2 md:mt-3">
+            <div className="text-xl md:text-3xl font-extrabold mt-2 md:mt-3 text-orange-600">
               <Typewriter
                 options={{
                   strings: [

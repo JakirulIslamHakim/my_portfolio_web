@@ -47,7 +47,7 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost text-2xl md:text-4xl cursor-wait font-bold italic">
+          <a className="btn btn-ghost text-2xl md:text-4xl cursor-wait font-bold italic bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
             H4K1[\/]
           </a>
         </div>

@@ -1,10 +1,15 @@
 import Container from "../../Components/Shared/Container";
 import Typewriter from "typewriter-effect";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({
+  duration: 1000,
+});
 
 const AboutMe = () => {
   return (
     <Container>
-      <div id="about" className="md:w-2/3 mx-auto space-y-4 text-center ">
+      <div  data-aos="zoom-in-up" id="about" className="md:w-2/3 mx-auto space-y-4 text-center ">
         <h2 className="text-3xl md:text-4xl font-semibold ">
           <Typewriter
             options={{
