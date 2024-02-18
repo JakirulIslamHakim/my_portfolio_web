@@ -1,26 +1,45 @@
-import { NavLink } from "react-router-dom";
 import ContactIcon from "../ContactIcon/ContactIcon";
+import { Link, animateScroll as scroll } from "react-scroll";
+import "./navbar.css";
 
 const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink to={"/"}>Home</NavLink>
+        <Link
+          to="home"
+          onClick={() => scroll.scrollToTop()}
+          smooth={true}
+          duration={500}
+        >
+          Home
+        </Link>
       </li>
       <li>
-        <NavLink to={"about"}>About Me</NavLink>
+        <Link to="about-me" smooth={true} duration={700} offset={-100}>
+          About Me
+        </Link>
       </li>
       <li>
-        <NavLink to={"contact"}>Blog</NavLink>
+        <Link to="skills" smooth={true} duration={500} offset={-80}>
+          Skills
+        </Link>
       </li>
       <li>
-        <NavLink to={"followMe"}>Contact us</NavLink>
+        <Link to="projects" smooth={true} duration={700} offset={-40}>
+          Projects
+        </Link>
+      </li>
+      <li>
+        <Link to="contact" smooth={true} duration={1000} offset={-100}>
+          Contact
+        </Link>
       </li>
     </>
   );
 
   return (
-    <div className="  bg-base-300 py-3">
+    <div className="  bg-base-300 py-1 fixed left-0 right-0 z-50">
       <div className="navbar max-w-7xl mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">

@@ -6,16 +6,24 @@ import AboutMe from "../Pages/AboutMe/AboutMe";
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout></MainLayout>,
-    children: [
-      {
-        path: "/",
-        element: <Home></Home>,
-      },
-      {
-        path: "about",
-        element: <AboutMe></AboutMe>,
-      },
-    ],
+    element: <Home></Home>,
   },
 ]);
+
+//  --old
+// export const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <MainLayout></MainLayout>,
+//     children: [
+//       {
+//         path: "/",
+//         element: <Home></Home>,
+//       },
+//       {
+//         path: "about",
+//         element: <AboutMe></AboutMe>,
+//       },
+//     ],
+//   },
+// ]);

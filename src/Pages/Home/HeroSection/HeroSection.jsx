@@ -10,7 +10,7 @@ AOS.init({
 const HeroSection = () => {
   return (
     <Container>
-      <div className="hero rounded-lg  md:py-12  ">
+      <div className="hero rounded-lg pt-8 md:py-16  ">
         <div className="hero-content justify-start flex-col md:flex-row-reverse">
           {/* image  */}
           <div data-aos="fade-right" className=" p-6 ">
@@ -33,11 +33,10 @@ const HeroSection = () => {
             <div className="text-xl md:text-3xl  mt-2 md:mt-3">
               <TextAnimation
                 text={[
+                  "Web Application Developer",
                   "Frontend Developer",
                   "Javascript Developer",
                   "React Developer",
-                  "MERN Stack Developer",
-                  "Node Developer",
                 ]}
               />
             </div>

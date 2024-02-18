@@ -5,20 +5,43 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import TextAnimation from "../../Components/TextAnimation/TextAnimation";
+import axios from "axios";
+import Swal from "sweetalert2";
+import { useState } from "react";
 AOS.init({
   duration: 1500,
 });
 
 const Contact = () => {
+  const [isLoading, setIsLoading] = useState(true);
   const {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
-  // console.log(errors);
+  const onSubmit = async (data) => {
+    setIsLoading(false);
+    const sendEmail = await axios.post(
+      "http://localhost:5000/api/v1/sendEmail",
+      data
+    );
+    setIsLoading(true);
+    // show a toast
+    if (sendEmail.data.message) {
+      console.log("email send seccessfully");
+      reset();
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Your message successfully sent",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    }
+  };
 
   return (
     <Container>
@@ -79,7 +102,7 @@ const Contact = () => {
                 <span className="label-text">Email</span>
               </label>
               <input
-                type="email"
+                type="text"
                 placeholder="Your email"
                 className="input input-bordered"
                 {...register("email", {
@@ -116,9 +139,16 @@ const Contact = () => {
               </p>
             </div>
             <div className="form-control mt-6">
-              <button type="submit" className="btn btn-primary">
-                Send Message
-              </button>
+              {isLoading ? (
+                <button
+                  type="submit"
+                  className="btn btn-primary bg-gradient-to-r from-cyan-500 to-blue-500 text-white"
+                >
+                  Send Message
+                </button>
+              ) : (
+                <button disabled className="btn font-bold text-red-600"> sending your message</button>
+              )}
             </div>
           </form>
         </div>

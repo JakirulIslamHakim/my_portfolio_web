@@ -1,4 +1,5 @@
 import Footer from "../../../Components/Shared/Footer";
+import Navbar from "../../../Components/Shared/Navbar";
 import AboutMe from "../../AboutMe/AboutMe";
 import Contact from "../../Contact/Contact";
 import Education from "../../Education/Education";
@@ -9,11 +10,22 @@ import HeroSection from "../HeroSection/HeroSection";
 const Home = () => {
   return (
     <div className="overflow-hidden">
-      <HeroSection></HeroSection>
-      <AboutMe></AboutMe>
-      <Skills></Skills>
-      <Project></Project>
-      <Contact></Contact>
+      <Navbar></Navbar>
+      <div id="hero-section">
+        <HeroSection></HeroSection>
+      </div>
+      <div id="about-me">
+        <AboutMe></AboutMe>
+      </div>
+      <div id="skills">
+        <Skills></Skills>
+      </div>
+      <div id="projects">
+        <Project></Project>
+      </div>
+      <div id="contact">
+        <Contact></Contact>
+      </div>
       <Education></Education>
       <Footer></Footer>
     </div>
