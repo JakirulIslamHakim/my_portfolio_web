@@ -24,23 +24,44 @@ const Contact = () => {
 
   const onSubmit = async (data) => {
     setIsLoading(false);
-    const sendEmail = await axios.post(
-      "http://localhost:5000/api/v1/sendEmail",
-      data
-    );
-    setIsLoading(true);
-    // show a toast
-    if (sendEmail.data.message) {
-      console.log("email send seccessfully");
-      reset();
-      Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Your message successfully sent",
-        showConfirmButton: false,
-        timer: 1500,
-      });
+    try {
+      const response = await axios.post(
+        "https://my-porfolie-web-server.vercel.app/api/v1/sendEmail",
+        data
+      );
+
+      if (response.status === 200) {
+        reset();
+        showSuccessToast();
+        setIsLoading(true);
+      } else {
+        showErrorToast();
+        setIsLoading(true);
+      }
+    } catch (error) {
+      console.error("Error occurred while sending email:", error.message);
+      showErrorToast();
+      setIsLoading(true);
     }
+  };
+
+  const showSuccessToast = () => {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Your message successfully sent",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  };
+
+  const showErrorToast = () => {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Something went wrong!",
+      footer: "Please try again",
+    });
   };
 
   return (
@@ -147,7 +168,10 @@ const Contact = () => {
                   Send Message
                 </button>
               ) : (
-                <button disabled className="btn font-bold text-red-600"> sending your message</button>
+                <button disabled className="btn font-bold text-red-600">
+                  {" "}
+                  sending your message
+                </button>
               )}
             </div>
           </form>
