@@ -8,6 +8,7 @@ import TextAnimation from "../../Components/TextAnimation/TextAnimation";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { useState } from "react";
+import ContactIcon from "../../Components/ContactIcon/ContactIcon";
 AOS.init({
   duration: 1500,
 });
@@ -96,6 +97,9 @@ const Contact = () => {
               +8801736100945
             </a>
             <span className="font-bold">(whatsapp)</span>
+          </div>
+          <div className="pt-3 md:pt-5 ml-8">
+            <ContactIcon />
           </div>
         </div>
         {/* contact form */}
