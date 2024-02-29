@@ -33,7 +33,7 @@ const Education = () => {
             className="card  w-full  md:w-1/2 p-5 text-justify"
           >
             <h3 className="text-xl font-bold mb-4">My Education</h3>
-            <p>
+            <p className="text-sm md:text-base">
               I am 19 years old. I studied in Ishwarganj Government College, a
               reputed college in Ishwarganj. I am already educated in
               exceptional education and working in web development. I passed PSC

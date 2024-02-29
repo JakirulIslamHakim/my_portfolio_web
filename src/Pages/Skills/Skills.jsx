@@ -52,12 +52,12 @@ const Skills = () => {
               icon={IoLogoJavascript}
               color={"text-yellow-600"}
             />
-            <SkillsProgressbar
+            {/* <SkillsProgressbar
               name={"Mui"}
               parcent={60}
               icon={SiMui}
               color={"text-blue-400"}
-            />
+            /> */}
             <SkillsProgressbar
               name={"react"}
               parcent={70}

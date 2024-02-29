@@ -3,6 +3,7 @@ import { FaDownload } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import TextAnimation from "../../../Components/TextAnimation/TextAnimation";
+import { Link } from "react-router-dom";
 
 AOS.init({
   duration: 1200,
@@ -46,9 +47,11 @@ const HeroSection = () => {
               and intuitive design, I bring projects to life with precision and
               creativity. Let's build something extraordinary."
             </p>
-            <button className="btn ml-6 btn-sm md:btn-md outline outline-black mt-6 text-bold md:text-xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
-              Resume <FaDownload></FaDownload>
-            </button>
+            <Link to={"./hakim_resume.pdf"} target="_blank" download>
+              <button className="btn ml-6 btn-sm md:btn-md outline outline-black mt-6 text-bold md:text-xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
+                Resume <FaDownload></FaDownload>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

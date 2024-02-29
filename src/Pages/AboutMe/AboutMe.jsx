@@ -21,8 +21,8 @@ const AboutMe = () => {
         <h4 className="text-base md:text-2xl font-bold text-cente">
           🚀 Driven MERN Stack Web Developer 🚀
         </h4>
-        <div className="md:text-xl space-y-5 text-justify">
-          <p>
+        <div className="text-sm md:text-xl space-y-5 text-justify ">
+          <p className="">
             I'm <span className="font-bold">Jakirul Islam Hakim</span>, an
             enthusiastic MERN stack web developer on a quest for digital
             excellence. With a toolbox packed with HTML, CSS, JavaScript, React,

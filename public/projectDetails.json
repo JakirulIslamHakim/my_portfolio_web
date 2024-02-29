@@ -1,0 +1,42 @@
+[
+    {
+      "image": "https://i.ibb.co/f8w57zP/Screenshot-38.png",
+      "name": "Job Hub",
+      "description": " The project 'Job Hub' is a full-stack web application resembling online marketplaces, offering unique design elements for a visually appealing layout. It includes features such as user authentication, job posting, bidding, and management. The website incorporates responsive design principles, ensuring compatibility across various devices. Utilizing MongoDB for data storage and React for frontend development, the project emphasizes clean code practices and thorough testing.The project also responsive for phone , tablet and desktop.",
+      "technology":[
+        "React", "Tailwind",
+        "React-Router",
+        "Tanstack-Query",
+        "Firebase",
+        "React Helmet",
+        "Swiper.js",
+        "Lottie-React",
+        "React-marquee",
+        "Aos",
+        "Sweetalert2",
+        "Express", "Mongodb" ,"Jsonwebtoken"
+      ],
+      "liveLink": "https://job-hub-6e265.web.app/",
+      "gitLink": "https://github.com/JakirulIslamHakim/Job-hub-client",
+      "animations":"flip-left"
+    },
+    {
+      "image": "https://i.ibb.co/GC1W6QH/Screenshot-49.png",
+      "name": "Portfolio Web",
+      "description": "In my portfolio website, I've implemented a responsive navigation bar, a resume download button, a captivating hero section, an informative about me segment, a showcase for projects, a section highlighting skills, and a realistic contact form. The contact form dynamically sends emails to the portfolio website owner upon submission. Additionally, I've incorporated an education section to provide further insight into my academic background. The entire website features a beautiful design with captivating animations, enhancing the user experience and showcasing my work effectively.",
+      "technology": [ "React", "Tailwind","Axios", "React-hook-form", "React-icons" , "React-scroll" , "Typewriter-effect" , "Aos" ,"Sweetalert2" ,"React-progressbar" , "Express"],
+      "liveLink": "https://hakim-portfolio-web.vercel.app/",
+      "gitLink": "https://github.com/JakirulIslamHakim/my_portfolio_web",
+      "animations":"flip-right"
+    },
+    {
+      "image": "https://i.ibb.co/j3nm5JY/Screenshot-51.png",
+      "name": "NexTech Marvels",
+      "description": "NexTech Marvels is a captivating web platform dedicated to showcasing the latest in technology and electronics. With a sleek design and intuitive interface, users can explore products from renowned brands like Apple, Samsung, Sony, Google, and more. The platform allows users to add products, browse brand-specific pages, and enjoy seamless authentication features. It's a testament to modern web development skills and a passion for innovation in tech.",
+      "technology": ["React", "Tailwind", "React-marquee", "React-icons" , "React-router-dom" , "Sweetalert2" ,"Firebase" , "Aos" , "React-rating" , "Swiper.js","Express", "Mongodb" ],
+      "liveLink": "https://nextech-marvels.web.app/",
+      "gitLink": "https://github.com/JakirulIslamHakim/NextTech-Mervels-client",
+      "animations":"flip-left"
+    }
+  ]
+  
