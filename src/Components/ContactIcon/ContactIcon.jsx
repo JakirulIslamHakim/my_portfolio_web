@@ -12,7 +12,7 @@ const ContactIcon = () => {
          </a>
          <a
             className="text-[#0077B5]"
-            href={'https://bd.linkedin.com/in/jakirul-islam-hakim-882418279'}
+            href={'https://www.linkedin.com/in/jakirulislamhakim/'}
             target="_blank"
             rel="noreferrer"
          >
